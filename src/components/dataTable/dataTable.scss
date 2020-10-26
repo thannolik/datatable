@@ -1,0 +1,35 @@
+@import './../../assets/css/common.scss';
+
+.table {
+    &-header {
+        background-color: $grey;
+        height: 48px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        &-title {
+            font-family: 'ProximaSbold';
+            font-size: 16px;
+            color: $fontBlack;
+            text-transform: uppercase;
+        }
+    }
+    &-body {
+        &-rows {
+            @extend .table-header;
+            height: auto;
+            background-color: $white;
+            padding: 12px 0;
+        }
+        &-data {
+            line-height: 14px;
+            font-family: 'ProximaRegular';
+            opacity: 10;
+        }
+        &-border {
+            border-bottom: 1px solid $borderGrey;
+            opacity: 0.33;
+        }
+    }
+}

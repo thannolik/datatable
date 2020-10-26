@@ -1,0 +1,10 @@
+@import './../../assets/css/common.scss';
+
+.data {
+    background-color: $white;
+    &-title {
+        font-family: 'ProximaSbold';
+        font-size: 22px;
+        color: $black;        
+    }
+}
